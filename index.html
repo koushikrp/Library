@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
+		<title>Library</title>
+	</head>
+	<body>
+		<header><h1>Welcome, To My Library</h1></header>
+		<main>
+			<div id="Books"></div>
+			<div id="sidebar">
+				<button id="newbook">Got a New Book? Add it</button>
+				<form action="" id="newbookdetails" method="get">
+					Author : <input type="text" name="Author" id="Author" /><br />
+					Book Name : <input type="text" name="Title" id="Title" /><br />
+					NumberOfPages : <input type="number" name="pages" id="pages" /><br />
+					<legend>Did you read it ?</legend>
+					<div>
+						<input type="checkbox" name="isread" id="read" value="false" />
+						<label for="read"> Read it!</label>
+					</div>
+					<br />
+					<input type="button" id="submit" value="Add the Book!" />
+				</form>
+				<p id="wrongDetails" style="display: none">Please Enter Details Correctly!</p>
+			</div>
+		</main>
+		<footer></footer>
+		<script src="scripts.js"></script>
+	</body>
+</html>

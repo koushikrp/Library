@@ -1,0 +1,70 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+}
+html {
+	background: rgb(178, 127, 212);
+	background: linear-gradient(
+		90deg,
+		rgba(178, 127, 212, 1) 0%,
+		rgba(245, 170, 79, 1) 95%,
+		rgba(237, 191, 126, 1) 100%
+	);
+}
+h1 {
+	text-align: center;
+	color: rgb(8, 149, 243);
+	margin: 30px;
+}
+h2 {
+	margin: 4px;
+}
+main {
+	display: flex;
+	justify-content: space-around;
+}
+#Books {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+#Books div {
+	background-color: silver;
+	border-radius: 20px;
+	padding: 0px 0px 0px 10px;
+}
+p {
+	margin: 5px;
+}
+#newbook {
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	background-color: turquoise;
+}
+#newbookdetails {
+	display: none;
+	margin: 20px;
+}
+#submit {
+	padding: 5px;
+	width: 150px;
+	border-radius: 19px;
+	border: none;
+}
+.item > button {
+	float: right;
+	/* height: 100%; */
+	border-radius: 20px;
+	border: none;
+	height: 100%;
+	width: 50px;
+	background-color: silver;
+}
+.item > button:hover {
+	background-color: rgb(170, 164, 209);
+}
