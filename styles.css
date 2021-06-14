@@ -32,23 +32,33 @@ main {
 	gap: 10px;
 }
 #Books div {
+	min-width: 400px;
+	height: auto;
 	background-color: silver;
 	border-radius: 20px;
-	padding: 0px 0px 0px 10px;
+	padding: 5px 5px 5px 5px;
 }
 p {
-	margin: 5px;
+	margin: 6px;
 }
-#newbook {
+#wrongDetails {
+	font-size: 15px;
+}
+#newbook,
+#addBook,
+#removeBook {
 	padding: 10px;
 	border: none;
 	border-radius: 10px;
 	font-size: 20px;
 	background-color: turquoise;
 }
-#newbookdetails {
-	display: none;
-	margin: 20px;
+#newbook:hover,
+#addBook:hover,
+#removeBook:hover {
+	color: turquoise;
+	background-color: rgb(170, 122, 122);
+	cursor: pointer;
 }
 #submit {
 	padding: 5px;
@@ -56,15 +66,34 @@ p {
 	border-radius: 19px;
 	border: none;
 }
-.item > button {
+#submit:hover {
+	color: rgb(253, 255, 255);
+	background-color: rgb(7, 0, 7);
+	cursor: pointer;
+}
+.removeThisBook {
 	float: right;
-	/* height: 100%; */
 	border-radius: 20px;
 	border: none;
 	height: 100%;
 	width: 50px;
 	background-color: silver;
 }
-.item > button:hover {
+.removeThisBook:hover,
+.statusButton:hover {
 	background-color: rgb(170, 164, 209);
+}
+.statusButton {
+	float: left;
+	height: 100%;
+	width: 50px;
+	border-radius: 20px;
+	border: none;
+	background-color: silver;
+}
+#sidebar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
 }

@@ -15,18 +15,22 @@
 			<div id="sidebar">
 				<button id="newbook">Got a New Book? Add it</button>
 				<form action="" id="newbookdetails" method="get">
-					Author : <input type="text" name="Author" id="Author" /><br />
-					Book Name : <input type="text" name="Title" id="Title" /><br />
-					NumberOfPages : <input type="number" name="pages" id="pages" /><br />
+					Author : <input type="text" name="Author" id="Author" placeholder="Enter the Author Name" /><br />
+					Book Name : <input type="text" name="Title" id="Title" placeholder="Enter the Book Name" /><br />
+					NumberOfPages :
+					<input type="number" name="pages" id="pages" placeholder="Enter Number of Pages" /><br />
 					<legend>Did you read it ?</legend>
 					<div>
 						<input type="checkbox" name="isread" id="read" value="false" />
-						<label for="read"> Read it!</label>
+						<label for="read">Yes, Read it!</label>
 					</div>
 					<br />
 					<input type="button" id="submit" value="Add the Book!" />
+					<p id="wrongDetails" style="display: none">Please Enter Details Correctly!</p>
 				</form>
-				<p id="wrongDetails" style="display: none">Please Enter Details Correctly!</p>
+
+				<button id="addBook">Add a Random Book</button>
+				<button id="removeBook">Delete a Random Book</button>
 			</div>
 		</main>
 		<footer></footer>
