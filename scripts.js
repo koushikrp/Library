@@ -6,6 +6,7 @@ function Book(author, title, numOfPages, isRead) {
 	this.numOfPages = numOfPages;
 	this.isRead = isRead;
 }
+
 // localStorage.clear();
 function addBookToLibrary(userInput) {
 	let newBook = new Book(userInput.author, userInput.title, userInput.numOfPages, userInput.isRead);
