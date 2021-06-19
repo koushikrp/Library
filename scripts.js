@@ -1,10 +1,11 @@
-let myLibrary = [];
-
-function Book(author, title, numOfPages, isRead) {
-	this.author = author;
-	this.title = title;
-	this.numOfPages = numOfPages;
-	this.isRead = isRead;
+myLibrary = [];
+class Book {
+	constructor(author, title, numOfPages, isRead) {
+		this.author = author;
+		this.title = title;
+		this.numOfPages = numOfPages;
+		this.isRead = isRead;
+	}
 }
 
 // localStorage.clear();
